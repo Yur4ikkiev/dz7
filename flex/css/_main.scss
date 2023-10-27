@@ -1,0 +1,59 @@
+.main {
+    @include flex(row, space-between, center);
+}
+
+.main {
+    display: block;
+    padding-left: 21.3%;
+
+    .main__heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .main__block { 
+        display: flex;
+        width: 100%;
+        margin: 2.5% 1% 6.5% 0;
+    }
+
+    .main__block-item {
+        @include flex(column, center, center);
+        background-color: $light;
+        width: 17%;
+        padding: 1% 1.74% 1.8%;
+        margin-right: 2%;
+    }
+    .main__img {
+        padding-top: 9%;
+        padding-bottom: 12%;
+    }
+
+    .main__text,
+    .main__block__price {
+        padding-bottom: 6.5%;
+    }
+
+    .main__text {
+        text-align: center;
+        font-size: 0.88rem;
+        line-height: 20px;
+    }
+    
+    .main__block__price {
+        font-size: 1.31rem;
+        font-weight: 700;
+    }
+    
+    .main__block__btn {
+        width: 65%;
+        padding: 5%;
+        color: $light;
+        background-color: $accent-color;
+        border-radius: 30px;
+        border: none;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+

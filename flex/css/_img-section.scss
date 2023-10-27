@@ -1,0 +1,43 @@
+.img-section {
+    @include flex(row, space-between, center);
+}
+
+.img-section {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 4.2%;
+}
+
+.img-section__text {
+    @include flex(column, flex-start, flex-start);
+    gap: 32.5px;
+    padding-left: 21.3%;
+    position: absolute;
+    z-index: 2;
+    color: $light;
+
+    .img-section__heading {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 56px;
+        text-align: center;
+        color: $light;
+    }
+
+    .img-section__text-span,
+    .img-section__link {
+        color: $light;
+        font-size: 0.88rem;
+        line-height: 20px;
+    }
+
+    .img-section__link {
+        width: 67%;
+        border: 2px solid $light;
+        border-radius: 40px;
+        padding: 3.2% 9.4%;
+        text-align: center;
+        letter-spacing: 0.7px;
+    }
+}
